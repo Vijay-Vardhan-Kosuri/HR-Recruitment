@@ -1,0 +1,1555 @@
+/**
+ * HireFlow Compensation & Offer Package Domain — Package 031
+ * Autonomic Architecture & Enterprise Schema Specification
+ */
+
+export interface OfferComp031Entity0 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity0(params: Partial<OfferComp031Entity0> = {}): OfferComp031Entity0 {
+  return {
+    id: params.id ?? 'offe-031-0-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-0',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity0(entity: OfferComp031Entity0): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity0Stage(entity: OfferComp031Entity0, nextStage: string): OfferComp031Entity0 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity1 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity1(params: Partial<OfferComp031Entity1> = {}): OfferComp031Entity1 {
+  return {
+    id: params.id ?? 'offe-031-1-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-1',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity1(entity: OfferComp031Entity1): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity1Stage(entity: OfferComp031Entity1, nextStage: string): OfferComp031Entity1 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity2 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity2(params: Partial<OfferComp031Entity2> = {}): OfferComp031Entity2 {
+  return {
+    id: params.id ?? 'offe-031-2-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-2',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity2(entity: OfferComp031Entity2): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity2Stage(entity: OfferComp031Entity2, nextStage: string): OfferComp031Entity2 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity3 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity3(params: Partial<OfferComp031Entity3> = {}): OfferComp031Entity3 {
+  return {
+    id: params.id ?? 'offe-031-3-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-3',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity3(entity: OfferComp031Entity3): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity3Stage(entity: OfferComp031Entity3, nextStage: string): OfferComp031Entity3 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity4 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity4(params: Partial<OfferComp031Entity4> = {}): OfferComp031Entity4 {
+  return {
+    id: params.id ?? 'offe-031-4-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-4',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity4(entity: OfferComp031Entity4): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity4Stage(entity: OfferComp031Entity4, nextStage: string): OfferComp031Entity4 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity5 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity5(params: Partial<OfferComp031Entity5> = {}): OfferComp031Entity5 {
+  return {
+    id: params.id ?? 'offe-031-5-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-5',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity5(entity: OfferComp031Entity5): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity5Stage(entity: OfferComp031Entity5, nextStage: string): OfferComp031Entity5 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity6 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity6(params: Partial<OfferComp031Entity6> = {}): OfferComp031Entity6 {
+  return {
+    id: params.id ?? 'offe-031-6-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-6',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity6(entity: OfferComp031Entity6): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity6Stage(entity: OfferComp031Entity6, nextStage: string): OfferComp031Entity6 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity7 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity7(params: Partial<OfferComp031Entity7> = {}): OfferComp031Entity7 {
+  return {
+    id: params.id ?? 'offe-031-7-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-7',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity7(entity: OfferComp031Entity7): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity7Stage(entity: OfferComp031Entity7, nextStage: string): OfferComp031Entity7 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity8 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity8(params: Partial<OfferComp031Entity8> = {}): OfferComp031Entity8 {
+  return {
+    id: params.id ?? 'offe-031-8-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-8',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity8(entity: OfferComp031Entity8): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity8Stage(entity: OfferComp031Entity8, nextStage: string): OfferComp031Entity8 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity9 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity9(params: Partial<OfferComp031Entity9> = {}): OfferComp031Entity9 {
+  return {
+    id: params.id ?? 'offe-031-9-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-9',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity9(entity: OfferComp031Entity9): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity9Stage(entity: OfferComp031Entity9, nextStage: string): OfferComp031Entity9 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity10 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity10(params: Partial<OfferComp031Entity10> = {}): OfferComp031Entity10 {
+  return {
+    id: params.id ?? 'offe-031-10-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-10',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity10(entity: OfferComp031Entity10): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity10Stage(entity: OfferComp031Entity10, nextStage: string): OfferComp031Entity10 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity11 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity11(params: Partial<OfferComp031Entity11> = {}): OfferComp031Entity11 {
+  return {
+    id: params.id ?? 'offe-031-11-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-11',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity11(entity: OfferComp031Entity11): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity11Stage(entity: OfferComp031Entity11, nextStage: string): OfferComp031Entity11 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity12 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity12(params: Partial<OfferComp031Entity12> = {}): OfferComp031Entity12 {
+  return {
+    id: params.id ?? 'offe-031-12-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-12',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity12(entity: OfferComp031Entity12): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity12Stage(entity: OfferComp031Entity12, nextStage: string): OfferComp031Entity12 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity13 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity13(params: Partial<OfferComp031Entity13> = {}): OfferComp031Entity13 {
+  return {
+    id: params.id ?? 'offe-031-13-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-13',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity13(entity: OfferComp031Entity13): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity13Stage(entity: OfferComp031Entity13, nextStage: string): OfferComp031Entity13 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity14 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity14(params: Partial<OfferComp031Entity14> = {}): OfferComp031Entity14 {
+  return {
+    id: params.id ?? 'offe-031-14-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-14',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity14(entity: OfferComp031Entity14): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity14Stage(entity: OfferComp031Entity14, nextStage: string): OfferComp031Entity14 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity15 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity15(params: Partial<OfferComp031Entity15> = {}): OfferComp031Entity15 {
+  return {
+    id: params.id ?? 'offe-031-15-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-15',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity15(entity: OfferComp031Entity15): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity15Stage(entity: OfferComp031Entity15, nextStage: string): OfferComp031Entity15 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity16 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity16(params: Partial<OfferComp031Entity16> = {}): OfferComp031Entity16 {
+  return {
+    id: params.id ?? 'offe-031-16-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-16',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity16(entity: OfferComp031Entity16): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity16Stage(entity: OfferComp031Entity16, nextStage: string): OfferComp031Entity16 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity17 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity17(params: Partial<OfferComp031Entity17> = {}): OfferComp031Entity17 {
+  return {
+    id: params.id ?? 'offe-031-17-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-17',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity17(entity: OfferComp031Entity17): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity17Stage(entity: OfferComp031Entity17, nextStage: string): OfferComp031Entity17 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity18 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity18(params: Partial<OfferComp031Entity18> = {}): OfferComp031Entity18 {
+  return {
+    id: params.id ?? 'offe-031-18-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-18',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity18(entity: OfferComp031Entity18): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity18Stage(entity: OfferComp031Entity18, nextStage: string): OfferComp031Entity18 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity19 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity19(params: Partial<OfferComp031Entity19> = {}): OfferComp031Entity19 {
+  return {
+    id: params.id ?? 'offe-031-19-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-19',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity19(entity: OfferComp031Entity19): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity19Stage(entity: OfferComp031Entity19, nextStage: string): OfferComp031Entity19 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity20 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity20(params: Partial<OfferComp031Entity20> = {}): OfferComp031Entity20 {
+  return {
+    id: params.id ?? 'offe-031-20-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-20',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity20(entity: OfferComp031Entity20): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity20Stage(entity: OfferComp031Entity20, nextStage: string): OfferComp031Entity20 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity21 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity21(params: Partial<OfferComp031Entity21> = {}): OfferComp031Entity21 {
+  return {
+    id: params.id ?? 'offe-031-21-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-21',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity21(entity: OfferComp031Entity21): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity21Stage(entity: OfferComp031Entity21, nextStage: string): OfferComp031Entity21 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity22 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity22(params: Partial<OfferComp031Entity22> = {}): OfferComp031Entity22 {
+  return {
+    id: params.id ?? 'offe-031-22-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-22',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity22(entity: OfferComp031Entity22): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity22Stage(entity: OfferComp031Entity22, nextStage: string): OfferComp031Entity22 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity23 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity23(params: Partial<OfferComp031Entity23> = {}): OfferComp031Entity23 {
+  return {
+    id: params.id ?? 'offe-031-23-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-23',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity23(entity: OfferComp031Entity23): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity23Stage(entity: OfferComp031Entity23, nextStage: string): OfferComp031Entity23 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
+export interface OfferComp031Entity24 {
+  id: string;
+  tenantId: string;
+  referenceCode: string;
+  stageName: string;
+  p0: string | number | boolean | null;
+  p1: string | number | boolean | null;
+  p2: string | number | boolean | null;
+  p3: string | number | boolean | null;
+  p4: string | number | boolean | null;
+  p5: string | number | boolean | null;
+  p6: string | number | boolean | null;
+  p7: string | number | boolean | null;
+  p8: string | number | boolean | null;
+  p9: string | number | boolean | null;
+  scoreMetric?: number;
+  slaTargetHours?: number;
+  metadata?: Record<string, string | number | boolean>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export function createOfferComp031Entity24(params: Partial<OfferComp031Entity24> = {}): OfferComp031Entity24 {
+  return {
+    id: params.id ?? 'offe-031-24-' + Math.random().toString(36).substring(2, 9),
+    tenantId: params.tenantId ?? 'tenant-acme-prod',
+    referenceCode: params.referenceCode ?? 'HF-REF-031-24',
+    stageName: params.stageName ?? 'ACTIVE_SOURCING',
+    p0: params.p0 ?? null,
+    p1: params.p1 ?? null,
+    p2: params.p2 ?? null,
+    p3: params.p3 ?? null,
+    p4: params.p4 ?? null,
+    p5: params.p5 ?? null,
+    p6: params.p6 ?? null,
+    p7: params.p7 ?? null,
+    p8: params.p8 ?? null,
+    p9: params.p9 ?? null,
+    scoreMetric: params.scoreMetric ?? 95,
+    slaTargetHours: params.slaTargetHours ?? 4,
+    metadata: params.metadata ?? { engine: 'HireFlow ATS v2' },
+    createdAt: params.createdAt ?? new Date().toISOString(),
+    updatedAt: params.updatedAt ?? new Date().toISOString()
+  };
+}
+
+export function validateOfferComp031Entity24(entity: OfferComp031Entity24): { valid: boolean; errors: string[] } {
+  const errors: string[] = [];
+  if (!entity.id) errors.push('Field id is required');
+  if (!entity.tenantId) errors.push('Field tenantId is required');
+  if (!entity.referenceCode) errors.push('Field referenceCode is required');
+  return { valid: errors.length === 0, errors };
+}
+
+export function transitionOfferComp031Entity24Stage(entity: OfferComp031Entity24, nextStage: string): OfferComp031Entity24 {
+  return {
+    ...entity,
+    stageName: nextStage,
+    updatedAt: new Date().toISOString()
+  };
+}
+
